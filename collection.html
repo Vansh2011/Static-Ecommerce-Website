@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attire</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="bootstrap-5.0.2-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/CSS"
+    />
+    <link href="css/style.css" rel="stylesheet" type="text/CSS" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex justify-content-between align-items-center order-lg-0"
+          href="index.html"
+        >
+          <img src="images/shopping-bag-icon.png" alt="site icon" />
+          <span class="text-uppercase fw-lighter ms-2">Attire</span>
+        </a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item px-2 py-2">
+              <a
+                class="nav-link text-uppercase text-dark"
+                href="index.html"
+                target="_self"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#collection"
+                >Collection</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a
+                class="nav-link text-uppercase text-dark"
+                href="index.html#specials"
+                >Specials</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#blogs"
+                >Blogs</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#about"
+                >About us</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2 border-0">
+              <a class="nav-link text-uppercase text-dark" href="#popular"
+                >Popular</a
+              >
+            </li>
+          </ul>
+          <div class="cart">
+            <a href="cart.html" target="_blank" class="cartBtn"
+              ><ion-icon name="cart" class="shoppingcta"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <section id="page-header" class="text-center">
+      <h2>#StayHome</h2>
+      <p>Save More and Use Coupons to get 70% off!</p>
+    </section>
+    <!-- Start of collection -->
+
+    <section id="collectionpg" class="py-5">
+      <div class="container">
+        <div class="title text-center">
+          <h2 class="position-relative d-inline-block">New Collection</h2>
+        </div>
+
+        <div class="row g-0">
+          <div
+            class="d-flex flex-wrap justify-content-center mt-5 filter-button-grouppg"
+          >
+            <button
+              type="button"
+              class="btn m-2 text-dark active-filter-btnpg"
+              data-filter="*"
+            >
+              All
+            </button>
+            <button type="button" class="btn m-2 text-dark" data-filter=".men">
+              Men
+            </button>
+            <button
+              type="button"
+              class="btn m-2 text-dark"
+              data-filter=".women"
+            >
+              Women
+            </button>
+            <button
+              type="button"
+              class="btn m-2 text-dark"
+              data-filter=".access"
+            >
+              Accessories
+            </button>
+          </div>
+
+          <div class="collection-listpg mt-4 row gx-0 gy-3">
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 men">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_best_selling_1.jpg" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Men Suit</p>
+                <span class="fw-bold">₹ 5999</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtn">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrapper">
+                <span class="icon-close">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 men">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_best_selling_2.jpg" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Jacket</p>
+                <span class="fw-bold">₹ 2500</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtnja">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrapperja">
+                <span class="icon-close close-ja">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox text-white">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size2">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 men">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_on_sale_2.jpg" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Hoodie</p>
+                <span class="fw-bold">₹3199</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtnHo">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrapperHo">
+                <span class="icon-close close-ho">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 men">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_top_rated_1.jpg" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Blue Shirt</p>
+                <span class="fw-bold">₹ 2995</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtnbl">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrapperbl">
+                <span class="icon-close close-bl">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 men women">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_top_rated_3.jpg" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Oversized Hoodie</p>
+                <span class="fw-bold">₹ 1995</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtnoh">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrapperoh">
+                <span class="icon-close close-oh">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 access">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_on_sale_3.jpg" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Trainers</p>
+                <span class="fw-bold">₹ 2999</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtnls">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrapperls">
+                <span class="icon-close close-ls">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 access">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_top_rated_2.jpg" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Casio Smart Outdoor Watch</p>
+                <span class="fw-bold">₹ 2499</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtnsw">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrappersw">
+                <span class="icon-close close-sw">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 access">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_on_sale_1.jpg" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Tote Bag</p>
+                <span class="fw-bold">₹ 2500</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtnpu">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrapperpu">
+                <span class="icon-close close-pu">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 access">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_accessory_1.jpg" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Analogue Watch (Women)</p>
+                <span class="fw-bold">₹ 1999</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtnaw">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrapperaw">
+                <span class="icon-close close-aw">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 men women">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_best_selling_3.jpg" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Gray Oversized Tshirt</p>
+                <span class="fw-bold">₹ 500</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtngot">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrappergot">
+                <span class="icon-close close-got">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 men">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_sweats.jpg" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Multi-Coloured Sweat Set</p>
+                <span class="fw-bold">₹ 6999</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtnmc">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrappermc">
+                <span class="icon-close close-mc">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 access">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_accessory_2.jpg" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1"></p>
+                <p class="text-capitalize my-1">Sunglasses</p>
+                <span class="fw-bold">₹ 150</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtnsl">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrappersl">
+                <span class="icon-close close-sl">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 women">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_pant_girl.png" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Denim Jeans</p>
+                <span class="fw-bold">₹ 3450</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtndj">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrapperdj">
+                <span class="icon-close close-dj">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 women">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_polo-shirt.png" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Halter Neck Vest</p>
+                <span class="fw-bold">₹ 2499</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtnto">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrapperto">
+                <span class="icon-close close-to">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 women">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_shirt-girl.png" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Ruched Detail Top</p>
+                <span class="fw-bold">₹ 1499</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtntot">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrappertot">
+                <span class="icon-close close-tot">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 women men">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_t-shirt_men.png" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Black Shacket</p>
+                <span class="fw-bold">₹ 1900</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtnsh">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrappersh">
+                <span class="icon-close close-sh">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 men">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_tunic-shirt_girl.png" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Black Shirt</p>
+                <span class="fw-bold">₹ 1799</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtnbs">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrapperbs">
+                <span class="icon-close close-bs">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 women">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_undershirt.png" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Polka Dot Top</p>
+                <span class="fw-bold">₹ 2595</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtnpdt">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrapperpdt">
+                <span class="icon-close close-pdt">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 women" title="210">
+              <div class="collection-imgpg position-relative">
+                <img src="images/c_western-shirt.png" class="w-100" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  >sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Black Sheer Top</p>
+                <span class="fw-bold">₹2599</span><br />
+                <button href="#" class="btn btn-primary mt-3 popupBtnws">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="wrapperws">
+                <span class="icon-close close-ws">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="popupBox">
+                  <h2>Please Select Your</h2>
+                  <div class="input-box">
+                    <select name="size" id="size">
+                      <option>Select Size</option>
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    title="Add to Cart"
+                    class="btn btn-primary cart-btn"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of collection -->
+
+    <footer class="bg-dark py-5">
+      <div class="container">
+        <div class="row text-white g-4">
+          <div class="col-md-6 col-lg-3">
+            <a
+              href="index.html"
+              class="text-decoration-none text-white text-uppercase brand"
+              >attire</a
+            >
+            <p class="text-muted mt-3 text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              molestias minima cupiditate quas quam ullam delectus, impedit
+              corrupti commodi iure quae culpa nemo
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light">Links</h5>
+            <ul class="list-unstyled">
+              <li class="my-3">
+                <a href="#" class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i> Home
+                </a>
+              </li>
+              <li class="my-3">
+                <a href="#" class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i> Collection
+                </a>
+              </li>
+              <li class="my-3">
+                <a href="#" class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i> Blogs
+                </a>
+              </li>
+              <li class="my-3">
+                <a href="#" class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i> About Us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light mb-3">Contact Us</h5>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3">
+                <i class="fas fa-map-marked-alt"></i>
+              </span>
+              <span class="fw-light">
+                Albert Street, New York, AS 756, United States of America
+              </span>
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="fw-light"> attire.support@gmail.com </span>
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3">
+                <i class="fas fa-phone-alt"></i>
+              </span>
+              <span class="fw-light"> +9786 6776 236 </span>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light mb-3">Follow Us</h5>
+            <div>
+              <ul class="list-unstyled d-flex">
+                <li>
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-pinterest"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end offooter -->
+
+    <!-- jquery-3 -->
+    <script src="js/jquery-3.7.1.js"></script>
+
+    <!-- Icon js  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- bootstrap-5 -->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- Custom -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
